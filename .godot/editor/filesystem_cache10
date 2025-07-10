@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752172477
+bazzabogan.png::CompressedTexture2D/CompressedTexture2D::6630821573046371427::1752092643::1752092643::1::::<><><>0<>0<>e8bfa6cc082d2ed0d48b9363dd5a2687<>res://.godot/imported/bazzabogan.png-afa833b4cf78120876dc37b435ee5837.ctex::
+block.png::CompressedTexture2D/CompressedTexture2D::8416342898921320587::1752091649::1752091649::1::::<><><>0<>0<>c9528ed73f9f607ec1f7b1e393045640<>res://.godot/imported/block.png-b7fed0a755ada244f74f9622a987e81f.ctex::
+brick.png::CompressedTexture2D/CompressedTexture2D::699849090907881448::1752091652::1752091652::1::::<><><>0<>0<>4feb9b35ead51776a96722c401019174<>res://.godot/imported/brick.png-3b7e2d2d29430a475fb75656e3e81471.ctex::
+coin.png::CompressedTexture2D::3868674070088289334::1752172477::1752172477::1::::<><><>0<>0<>4051bbb6f7ec1536c61031d6af297e8b<>res://.godot/imported/coin.png-7e710de472b75b3653c3283ef5153eb4.ctex::
+goomba.gd::GDScript::2644755768600570906::1752158138::0::1::::<>CharacterBody2D<><>0<>0<><>::
+goomba.tscn::PackedScene::8405515438806517161::1752168864::0::1::::<><><>0<>0<><>::uid://bdxe0gyns5h3w::::res://goomba.gd<>uid://8ksgkbj2fm40::::res://mario_graphics.png
+icon.svg::CompressedTexture2D/CompressedTexture2D::4432419100148755484::1752091536::1752091548::1::::<><><>0<>0<>1713480bd0a83545176c8e5e822294e7<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mario.png::CompressedTexture2D::3116751663799438763::1752162771::1752162771::1::::<><><>0<>0<>917f2669d160fc5cb5d1bea7a315e090<>res://.godot/imported/mario.png-ebd39d186f7b83aa1f6fc17f243fd637.ctex::
+mario_graphics.png::CompressedTexture2D::2337979765452409307::1752160910::1752160910::1::::<><><>0<>0<>7f04a964e051f8da0b1434d2dacde836<>res://.godot/imported/mario_graphics.png-2606ceb94cdec1bc1f016683324118b9.ctex::
+player.gd::GDScript::5674848157994443399::1752167167::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5312747058235735078::1752168864::0::1::::<><><>0<>0<><>::uid://cm366jt5udu76::::res://player.gd<>uid://bkn1pd5gl6s1h::::res://mario.png
+turtle.gd::GDScript::3951592862725879813::1752162286::0::1::::<>CharacterBody2D<><>0<>0<><>::
+turtle.tscn::PackedScene::35472999845514518::1752168864::0::1::::<><><>0<>0<><>::uid://bwkgflvhke3bt::::res://turtle.gd<>uid://8ksgkbj2fm40::::res://mario_graphics.png
+world.tscn::PackedScene::3093976167255654320::1752169021::0::1::::<><><>0<>0<><>::uid://dr5665hkn0oyl::::res://block.png<>uid://j8aoauf7xon5::::res://brick.png<>uid://chxsfybcdnkks::::res://player.tscn<>uid://dr0xu1th5xlcb::::res://goomba.tscn<>uid://rgh82lyk6uc::::res://turtle.tscn

@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://rgh82lyk6uc"]
+
+[ext_resource type="Script" uid="uid://bwkgflvhke3bt" path="res://turtle.gd" id="1_2ssyi"]
+[ext_resource type="Texture2D" uid="uid://8ksgkbj2fm40" path="res://mario_graphics.png" id="2_w1etq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghgcf"]
+atlas = ExtResource("2_w1etq")
+region = Rect2(0, 115, 97, 115)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlk0a"]
+atlas = ExtResource("2_w1etq")
+region = Rect2(97, 115, 97, 115)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e1omo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghgcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlk0a")
+}],
+"loop": true,
+"name": &"hop",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4wnx"]
+size = Vector2(14, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxseb"]
+size = Vector2(16, 4.5)
+
+[node name="turtle" type="CharacterBody2D"]
+script = ExtResource("1_2ssyi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -9)
+scale = Vector2(0.289948, 0.2375)
+sprite_frames = SubResource("SpriteFrames_e1omo")
+animation = &"hop"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -9)
+shape = SubResource("RectangleShape2D_p4wnx")
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(2, -19.75)
+shape = SubResource("RectangleShape2D_uxseb")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(13, -14)
+target_position = Vector2(0, 20)
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]

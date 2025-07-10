@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr0xu1th5xlcb"]
+
+[ext_resource type="Script" uid="uid://bdxe0gyns5h3w" path="res://goomba.gd" id="1_glra5"]
+[ext_resource type="Texture2D" uid="uid://8ksgkbj2fm40" path="res://mario_graphics.png" id="2_jke6y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwfim"]
+atlas = ExtResource("2_jke6y")
+region = Rect2(291, 220, 97, 110)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yj1s3"]
+atlas = ExtResource("2_jke6y")
+region = Rect2(388, 220, 97, 110)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fdw3t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwfim")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yj1s3")
+}],
+"loop": true,
+"name": &"hop",
+"speed": 4.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glra5"]
+size = Vector2(38.5454, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q440r"]
+size = Vector2(20, 4.5)
+
+[node name="goomba" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_glra5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -9)
+scale = Vector2(0.400068, 0.315217)
+sprite_frames = SubResource("SpriteFrames_fdw3t")
+animation = &"hop"
+autoplay = "hop"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.999999, -8.5)
+scale = Vector2(0.570755, 0.5)
+shape = SubResource("RectangleShape2D_glra5")
+
+[node name="hitbox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(1, -20)
+shape = SubResource("RectangleShape2D_q440r")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
