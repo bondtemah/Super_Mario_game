@@ -32,3 +32,8 @@ func show_game_over_screen():
 	
 	# Показать GameOver
 	$UI/GameOverLabel.visible = true
+
+
+func _on_transition_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Player"):
+		get_tree().change_scene_to_file("res://underworld.tscn")

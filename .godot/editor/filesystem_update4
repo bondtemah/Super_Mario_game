@@ -1,10 +1,7 @@
+res://world.gd
 res://world.tscn
+res://underworld.tscn
 res://player.tscn
 res://goomba.tscn
 res://turtle.tscn
 res://coin.tscn
-res://count_coins.gd
-res://coin.gd
-res://coin_gui.gd
-res://world.gd
-res://coin_gui.tscn

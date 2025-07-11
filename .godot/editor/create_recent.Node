@@ -1,11 +1,12 @@
-Label
-CanvasLayer
 CollisionShape2D
 Area2D
+Camera2D
+ColorRect
+TileMap
+Label
+CanvasLayer
 Sprite2D
 RayCast2D
 AnimatedSprite2D
 CharacterBody2D
 Timer
-Camera2D
-TileMap
