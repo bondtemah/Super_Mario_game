@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c64ol6cav3y6s"]
+
+[ext_resource type="Script" uid="uid://bg8psfs01s7f1" path="res://coin_gui.gd" id="1_s4fnc"]
+
+[node name="coin_gui" type="CanvasLayer"]
+script = ExtResource("1_s4fnc")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

@@ -85,7 +85,7 @@ script = ExtResource("1_onrkg")
 position = Vector2(-3.5, -13)
 scale = Vector2(0.352273, 0.474359)
 sprite_frames = SubResource("SpriteFrames_i3pqv")
-animation = &"die"
+animation = &"idle"
 
 [node name="AudioPlayer" type="AudioStreamPlayer2D" parent="AnimatedSprite2D"]
 stream = ExtResource("3_hqtel")
