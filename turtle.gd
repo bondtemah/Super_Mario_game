@@ -29,6 +29,7 @@ func update_animation():
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
+		body.velocity.y=-270
 		is_alive = false
 		queue_free()
 		
