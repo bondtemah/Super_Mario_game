@@ -104,7 +104,9 @@ func die():
 	await move_player_up_and_down()
 	
 	await get_tree().create_timer(1.5).timeout
-	get_tree().reload_current_scene()
+
+	get_tree().change_scene_to_file("res://gameover.tscn")
+
 
 func move_player_up_and_down():
 	var start_position = position

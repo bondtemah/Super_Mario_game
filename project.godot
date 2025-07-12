@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Super_mario_game"
+<<<<<<< HEAD
 run/main_scene="uid://bkc0ln1dm5fpo"
+=======
+run/main_scene="res://start.tscn"
+>>>>>>> dcbf81c (questionblock и начало и конец)
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -1,4 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://bkc0ln1dm5fpo"]
+
+[gd_scene load_steps=17 format=3 uid="uid://bkc0ln1dm5fpo"]
+
 
 [ext_resource type="Texture2D" uid="uid://dr5665hkn0oyl" path="res://block.png" id="1_fj7yv"]
 [ext_resource type="Script" uid="uid://1a2ejyn6uqhj" path="res://world.gd" id="1_pkg7o"]
@@ -9,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://cgqomu02uvoc1" path="res://coin.tscn" id="6_dwbse"]
 [ext_resource type="AudioStream" uid="uid://8hsem2stya0t" path="res://ost.mp3" id="8_gbfbk"]
 [ext_resource type="Script" uid="uid://chvmkq6q1802f" path="res://ui.gd" id="9_ioo17"]
+
+[ext_resource type="PackedScene" uid="uid://hschd1qldqwn" path="res://questionblock.tscn" id="10_wse8f"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aqk2v"]
 texture = ExtResource("1_fj7yv")
@@ -115,5 +120,19 @@ text = "GAME OVER
 "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+
+[node name="questionblock" parent="." instance=ExtResource("10_wse8f")]
+position = Vector2(-1400, -74)
+
+[node name="questionblock3" parent="." instance=ExtResource("10_wse8f")]
+position = Vector2(-1423, -74)
+
+[node name="questionblock2" parent="." instance=ExtResource("10_wse8f")]
+position = Vector2(-1043, -131)
+
+[node name="questionblock4" parent="." instance=ExtResource("10_wse8f")]
+position = Vector2(-436, -63)
+
 
 [connection signal="body_entered" from="interact" to="." method="_on_interact_body_entered"]
